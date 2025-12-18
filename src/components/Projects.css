@@ -1,0 +1,142 @@
+.projects-section {
+    background: var(--bg-primary);
+}
+
+.projects-grid {
+    display: grid;
+    gap: 2.5rem;
+}
+
+.project-card {
+    display: grid;
+    grid-template-columns: 80px 350px 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    opacity: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card.fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.project-number {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 800;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 0.3;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 0.5rem;
+}
+
+.project-image {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--bg-tertiary);
+    aspect-ratio: 16/10;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-medium);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--accent-gradient);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-medium);
+}
+
+.overlay-content {
+    transform: translateY(20px);
+    transition: var(--transition-medium);
+}
+
+.view-text {
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 0.95;
+}
+
+.project-card:hover .overlay-content {
+    transform: translateY(0);
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.1);
+}
+
+.project-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.project-date {
+    font-size: 0.9rem;
+    color: var(--accent-primary);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.project-description {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 968px) {
+    .project-card {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .project-number {
+        font-size: 2rem;
+        justify-content: center;
+    }
+
+    .project-image {
+        width: 100%;
+    }
+
+    .project-content h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .project-card {
+        padding: 1.25rem;
+    }
+
+    .project-number {
+        font-size: 1.5rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,29 @@
+.app {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-padding-top: 80px;
+}
+
+/* Loading animation */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.loading {
+  animation: shimmer 2s infinite;
+  background: linear-gradient(to right,
+      var(--bg-secondary) 4%,
+      var(--bg-tertiary) 25%,
+      var(--bg-secondary) 36%);
+  background-size: 1000px 100%;
+}

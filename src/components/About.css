@@ -1,0 +1,141 @@
+.about-section {
+    background: var(--bg-secondary);
+    position: relative;
+}
+
+.section-title {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    opacity: 0;
+}
+
+.section-title.fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.about-story {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: var(--text-secondary);
+    margin-bottom: 4rem;
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+}
+
+.about-story.fade-in-up {
+    animation: fadeInUp 0.6s ease-out 0.2s forwards;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.skill-card {
+    padding: 2rem;
+    text-align: center;
+    opacity: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card.fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.1), transparent);
+    transition: var(--transition-slow);
+}
+
+.skill-card:hover::before {
+    left: 100%;
+}
+
+.skill-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+}
+
+.skill-card:nth-child(2) .skill-icon {
+    animation-delay: 0.5s;
+}
+
+.skill-card:nth-child(3) .skill-icon {
+    animation-delay: 1s;
+}
+
+.skill-card:nth-child(4) .skill-icon {
+    animation-delay: 1.5s;
+}
+
+.skill-card:nth-child(5) .skill-icon {
+    animation-delay: 2s;
+}
+
+.skill-card:nth-child(6) .skill-icon {
+    animation-delay: 2.5s;
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.skill-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 968px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .about-story {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .skill-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .skill-icon {
+        font-size: 2.5rem;
+    }
+
+    .skill-card h3 {
+        font-size: 1.3rem;
+    }
+}
