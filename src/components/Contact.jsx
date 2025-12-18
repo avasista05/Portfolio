@@ -122,14 +122,6 @@ const Contact = () => {
                             </a>
                         </div>
 
-                        <div className="info-card glass-card">
-                            <div className="info-icon">📱</div>
-                            <h4>Phone</h4>
-                            <a href={`tel:${portfolioData.personal.phone}`}>
-                                {portfolioData.personal.phone}
-                            </a>
-                        </div>
-
                         <div className="social-links">
                             {Object.entries(portfolioData.social).map(([platform, url]) => (
                                 <a
