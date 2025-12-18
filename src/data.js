@@ -4,7 +4,7 @@ export const portfolioData = {
         logo: "AV",
         tagline: "Strategic Thinker. Product Enhancer. Collaboration-Driven.",
         subtitle: "Bridging strategy, technology, and people to drive impactful solutions across product management, project leadership, business analysis, supply chain optimization, and process engineering.",
-        profileImage: "/profile.jpg",
+        profileImage: "profile.jpg",
         email: "vasista.a@northeastern.edu",
         phone: "+1 (857) 397-6645"
     },
@@ -103,35 +103,35 @@ export const portfolioData = {
             title: "Student Stress Level Calculator & Coping Mechanisms",
             date: "September 2023",
             description: "Conducted survey-based research on international student stressors, analyzing data in Google Forms and visualizing insights with interactive dashboards in Google Looker Studio.",
-            image: "/project1.png"
+            image: "project1.png"
         },
         {
             number: "02",
             title: "AutoSchedule360 WebApp",
             date: "January 2024",
             description: "Streamlined project tracking with Gantt charts, optimized budgeting in Excel, and enhanced resource allocation using RACI charts, SWOT analysis, and risk management strategies.",
-            image: "/project2.png"
+            image: "project2.png"
         },
         {
             number: "03",
             title: "Financial Strategy for International Graduates",
             date: "January 2024",
             description: "Designed a 40-year financial strategy for a 25-year-old engineer earning $100K, optimizing investments, wealth growth, and risk management using Excel-driven analysis.",
-            image: "/project3.png"
+            image: "project3.png"
         },
         {
             number: "04",
             title: "CampusSpot: Seat Smarter, Not Harder",
             date: "September 2024",
             description: "Designed an intuitive UI and developed a scalable roadmap, integrating MVP launch strategies, cost projections, and a revenue model for sustainable growth.",
-            image: "/project4.png"
+            image: "project4.png"
         },
         {
             number: "05",
             title: "The Impact of Leadership, Technology, and Work-Life Dynamics",
             date: "September 2024",
             description: "Led research on leadership, technology, and work-life balance, analyzing survey data and delivering actionable insights for modern workplace strategies.",
-            image: "/project5.png"
+            image: "project5.png"
         }
     ],
 
