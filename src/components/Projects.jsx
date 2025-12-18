@@ -37,11 +37,6 @@ const Projects = () => {
                             <div className="project-number">{project.number}</div>
                             <div className="project-image">
                                 <img src={project.image} alt={project.title} />
-                                <div className="project-overlay">
-                                    <div className="overlay-content">
-                                        <span className="view-text">View Details</span>
-                                    </div>
-                                </div>
                             </div>
                             <div className="project-content">
                                 <h3>{project.title}</h3>

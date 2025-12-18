@@ -25,9 +25,6 @@ const Footer = () => {
 
                 <div className="footer-bottom">
                     <p>© {currentYear} {portfolioData.footer.copyrightText}</p>
-                    <p className="made-with">
-                        Made with <span className="heart">❤️</span> using React + Vite
-                    </p>
                 </div>
             </div>
         </footer>
